@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Alef';
+    box-sizing: border-box;
+}
+.animation{
+    font-family: 'Amarante';
+    font-size:48px; 
+    color: gray;
+    margin-top:6%;
+    margin-left: 15%;
+    margin-right: 15%;
+    position: relative;
+    animation-name: anime;
+    animation-duration: 3s;
+    width: 70%;
+    height: 13vh;
+    animation-fill-mode: forwards; 
+}
+.heading{
+    font-family: 'Amarante';
+    font-size:54px; 
+    color: gray;
+    margin-top:6%;
+}
+@keyframes anime{
+    0%{top: -100px;}    
+    100%{top: 20px;}    
+}
+.I{
+    font-size: 28px;
+    margin-top: 1%;
+}
+.II{
+    font-size: 36px;
+    text-align: center;
+    margin-top: 3%;
+    color: white;
+    animation-name: anime1;
+    animation-duration: 10s;
+    animation-fill-mode: forwards; 
+}
+@keyframes anime1{
+    0%{opacity: 0;}
+    100%{opacity: 100;}
+}
+body{
+    background-image: url('background/bg.png');
+    background-repeat: repeat-y;
+    background-size: 100% 100vh;
+}
+.logo{
+    width: 10%;
+    height: 10vh;
+}
+.hello{
+    color: gray;
+    margin-top: 1%;
+    margin-right: 2%;
+    padding: .5%;
+    background-color: black;
+    width: 7%;
+    float: right;
+    border: gray 3px solid;
+    border-radius: 15px;
+    font-size: 16px;
+}
+.hello:hover{
+    color: black;
+    background-color: gray;
+}
+#navbar{
+    margin-top: 1%;
+    position: fixed ;
+    top: 0;
+    width: 100%;
+}
+.avatar{
+    margin-top: 5%;
+}
+.code{
+    margin-top: 3%;
+}
+.lnk{
+    text-decoration: none;
+    color: gray;
+    font-family: 'ABeeZee';
+    font-size: 20px;
+    margin-left: 2%;
+    margin-top: 1.5%;
+    position: absolute;
+}
+
+.frame{
+    text-align: center;
+    
+}
+.para{
+    margin-left: 20%;
+    margin-right: 20%;
+    color: white;
+}
+
+.main{
+    background-color: transparent;
+    width: 80%;
+    margin-left: 10%;
+    height: 90vh;
+    border-radius: 20px;
+}
+
+.left-side{
+    margin-top: 5%;
+    margin-left: 10% ;
+    float: left;
+    background-color: gray;
+    width: 30%;
+    border-radius: 20px;
+}
+
+.right-side{
+    margin-top: 5%;
+    margin-right:10% ;
+    float:right;
+    border-radius: 20px;
+    background-color: gray;
+    width: 30%;
+}
+.login-form{  
+    margin-top: 5%;
+    position: absolute;
+    width: 60%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: transparent;
+    border-radius: 15px;
+}
+.input-box{
+    width: 40%;
+    border: gray 2px solid;
+    border-radius: 5px;
+    height: 8vh;
+    margin-left: 1% ; 
+    text-align: center;
+    font-size: 20px;
+    font-family: 'ABeeZee';
+}
+.submit{
+    color: gray; 
+    margin-left: 4%;
+    padding: .5%;
+    background-color: black;
+    width: 10%;
+    border: gray 3px solid;
+    font-size: 16px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+}   
+.submit:hover{
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    transform: rotateY(180deg);
+    transition-duration: 3s;
+
+}
+.lnk_img{
+    width: 40px;
+    height: 40px;
+    float: right;
+    margin: .2%;
+    margin-top: 1%;
+    position: relative;
+    transition-property: all;
+}
+.lnk_img:hover{
+    transform: rotateZ(360deg);
+    animation-name: shake;
+    transition-duration: 2s;
+}
+@keyframes shake{
+    0%{}
+    50%{}
+    100%{}
+}
